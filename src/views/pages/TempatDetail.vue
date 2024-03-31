@@ -25,23 +25,23 @@
           </div>
         </div>
         <div class="pb-[54px]">
-            <div class="flex gap-4 flex-wrap md:flex-nowrap">
+            <div class="flex gap-4 flex-wrap lg:flex-nowrap">
               <div class="flex flex-col w-full justify-start gap-8 border-solid border-t-[2px] border-gray-300 py-[24px]">
                  <p>{{ detailTempat.deskripsi }}</p>
                   <a :href="`http://wa.me/6285795111965?text=Hallo%20mimin%20TekMIRA,%20saya%20mau%20booking%20tempat%20${detailTempat.kategori}.`" target="_blank" class="px-[34px] py-[16px] md:px-[82px] md:py-[16px] rounded-md bg-white hover:opacity-[0.8] w-fit flex items-center gap-2"><img :src="require('@/assets/icons/wa.png')" class="inline w-[24px] h-[24px]" />BOOK NOW!</a>
               </div>
-              <div class="w-full md:w-1/2 flex flex-col gap-4">
+              <div class="w-full lg:w-1/2 flex flex-col gap-4">
                <div class="flex items-start w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl">
                   <div class="w-1/3">
-                    <h3 class="text-lg font-semibold mb-[6px]">Ukuran</h3>
+                    <h3 class="text-sm md:text-sm :text-lg font-semibold mb-[6px]">Ukuran</h3>
                     <p>{{ detailTempat.spesifikasi.ukuran }}</p>
                   </div>
                   <div class="w-1/3">
-                    <h3 class="text-lg font-semibold mb-[6px]">Hubungi</h3>
+                    <h3 class="text-sm md:text-sm :text-lg font-semibold mb-[6px]">Hubungi</h3>
                     <p>{{ detailTempat.spesifikasi.hubungi }}</p>
                   </div>
                   <div class="w-1/3">
-                    <h3 class="text-lg font-semibold mb-[6px]">Total Kapasitas</h3>
+                    <h3 class="text-sm md:text-sm :text-lg font-semibold mb-[6px]">Total Kapasitas</h3>
                     <p>{{ detailTempat.spesifikasi.kapasitas }} Orang</p>
                   </div>
                </div>
