@@ -33,7 +33,7 @@
               <div class="w-full lg:w-1/2 flex flex-col gap-4">
                <div class="flex items-start w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl">
                   <div class="w-1/2 md:w-1/3">
-                    <h3 class="text-sm md:text-md  font-semibold mb-[6px]">Ukuran</h3>
+                    <h3 class="text-md  font-semibold mb-[6px]">Ukuran</h3>
                     <p>{{ detailTempat.spesifikasi.ukuran }}</p>
                   </div>
                   <div class="w-1/3 hidden md:block">
