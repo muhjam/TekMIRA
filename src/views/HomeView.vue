@@ -5,7 +5,7 @@
         </div>
         <div class="pb-[84px]">
             <h2 class="text-3xl font-semibold mb-[24px]">Kategori</h2>
-            <div class="flex gap-4 flex-wrap lg:flex-nowrap overflow-x-auto">
+            <div class="flex gap-4 flex-wrap lg:flex-nowrap">
                 <a
           v-for="(v, i) in kategori"
           :key="i"
