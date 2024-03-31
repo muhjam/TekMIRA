@@ -37,16 +37,16 @@
                     <p>{{ detailTempat.spesifikasi.ukuran }}</p>
                   </div>
                   <div class="w-1/3 hidden md:block">
-                    <h3 class="text-sm md:text-md  font-semibold mb-[6px]">Hubungi</h3>
+                    <h3 class="text-md  font-semibold mb-[6px]">Hubungi</h3>
                     <p>{{ detailTempat.spesifikasi.hubungi }}</p>
                   </div>
                   <div class="w-1/2 md:w-1/3">
-                    <h3 class="text-sm md:text-md  font-semibold mb-[6px]">Total Kapasitas</h3>
+                    <h3 class="text-md  font-semibold mb-[6px]">Total Kapasitas</h3>
                     <p>{{ detailTempat.spesifikasi.kapasitas }} Orang</p>
                   </div>
                </div>
                <div class="w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl">
-                    <h3 class="text-lg font-semibold mb-[6px]">Fasilitas Utama</h3>
+                    <h3 class="text-md md:text-lg  font-semibold mb-[6px]">Fasilitas Utama</h3>
                   <div class="flex flex-wrap">
                   <div v-for="(v, i) in detailTempat.fasilitas" :key="i" class="w-1/2 flex mb-[8px] gap-4">
                     <img :src="require('@/assets/icons/'+ v + '.png')" class="object-contain" />
