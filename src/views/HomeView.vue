@@ -23,7 +23,7 @@
         </a>
             </div>
         </div>
-        <div class="pb-[24px] px-[50px]">
+        <div class="pb-[24px] md:px-[50px]">
             <div class="flex items-center gap-4 flex-wrap lg:flex-nowrap">
                <div class="w-full lg:w-[50%]">
                 <h3 class="text-3xl font-bold mb-[24px]">Sewa tempat <br/> dengan mudah dan <br/> cepat</h3>
