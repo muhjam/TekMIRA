@@ -171,7 +171,8 @@
               <div class="p-4">
                 <h4  class="text-md font-semibold mb-[16px]">{{ v.nama }}</h4>
                 <div v-for="(fasilitas, idx) in v.fasilitas" :key="idx" class="flex gap-2 text-sm items-center mb-[8px]"><img :src="require('@/assets/icons/'+ cekFasilitasImg(idx))" class="object-contain w-[20px]" /> {{ fasilitas }}</div>
-                <div class="flex justify-end mt-[24px]">
+                <div class="flex justify-end mt-[24px] items-center">
+                  <span class="text-[#2587FB] text-sm font-semibold cursor-pointer hover:opacity-[0.8]">More Detail</span>
                   <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20reservasi%20kamar%20${v.nama}-${detailTempat.nama}.`" class="ml-auto text-sm font-semibold text-white bg-[#245785] px-[16px] py-[8px] rounded-md cursor-pointer hover:opacity-[0.8]">Reservasi</a>
                 </div>
               </div>
