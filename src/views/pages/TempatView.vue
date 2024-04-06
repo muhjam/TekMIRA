@@ -17,7 +17,7 @@
                 <p v-else-if="$route.path.includes('/wisma')" class="text-sm font-light mb-[34px]">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
-                <a :href="`http://wa.me/6285795111965?text=Hallo%20mimin%20TekMIRA,%20saya%20mau%20nanya-nanya%20dong.`" class="px-[24px] py-[16px] rounded-md bg-white hover:opacity-[0.8] flex items-center gap-2 w-fit"><img :src="require('@/assets/icons/wa.png')" class="inline w-[24px] h-[24px]" />HUBUNGI SEKARANG</a>
+                <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20nanya-nanya%20dong.`" class="px-[24px] py-[16px] rounded-md bg-white hover:opacity-[0.8] flex items-center gap-2 w-fit"><img :src="require('@/assets/icons/wa.png')" class="inline w-[24px] h-[24px]" />HUBUNGI SEKARANG</a>
                </div>
                <div class="flex justify-end w-full md:w-1/2">
                 <img v-if="$route.path.includes('/meeting')"  :src="require('@/assets/images/kategori2.png')" class="object-cover rounded-xl md:rounded-none md:rounded-r-xl w-full md:w-[80%] h-[500px]" />
@@ -55,12 +55,12 @@
             <div class="flex">
               <div class="flex flex-col w-full justify-start gap-4">
                 <div v-for="(v, i) in kategoriTempat" :key="i" class="w-full rounded-2xl overflow-hidden bg-white shadow-sm flex">
-                  <img class="w-1/4 rounded-2xl object-cover hidden md:block" :src="require('@/assets/images/'+v.img)" alt="Category Image">
+                  <img class="w-1/4 rounded-2xl object-cover hidden md:block" :src="require('@/assets/images/'+v.img[0])" alt="Category Image">
                   <div class="w-full px-6 py-4">
-                    <img class="w-full h-[200px] mb-2 rounded-2xl object-cover block md:hidden" :src="require('@/assets/images/'+v.img)" alt="Category Image">
-                    <h2 class="font-bold text-xl mb-2">{{ v.nama }}</h2>
-                    <p class="text-gray-700 text-base mb-2">Alamat</p>
-                    <p class="text-gray-700 text-base mb-[34px]">
+                    <img class="w-full h-[200px] mb-2 rounded-2xl object-cover block md:hidden" :src="require('@/assets/images/'+v.img[0])" alt="Category Image">
+                    <h2 class="font-bold text-xl">{{ v.nama }}</h2>
+                    <p class="text-gray-700 text-sm mb-2">{{ truncateText(v.lokasi, 30) }}</p>
+                    <p class="text-gray-700 text-sm mb-[34px]">
                       {{ truncateText(v.deskripsi, 500) }}
                     </p>
                     <div class="flex gap-2">

@@ -18,6 +18,7 @@
   
   html,
   body {
+  scroll-behavior: smooth;
 	background-color: #F4F3F0;
 	font-family: "Montserrat";
 	-webkit-font-smoothing: antialiased;
