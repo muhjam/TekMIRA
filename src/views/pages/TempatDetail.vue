@@ -192,7 +192,7 @@
                 <h4 class="text-md font-semibold">{{ v.nama }}</h4>
                 <p class="text-sm">{{ truncateText(v.deskripsi, 100) }}</p>
                 <div class="flex justify-end mt-[24px]">
-                <a :href="`${v.slug}`" class="ml-auto text-sm text-rose-500 hover:underline hover:decoration-from-font">Reservasi!</a>
+                <a :href="`${v.slug}`" class="ml-auto text-sm text-rose-500 hover:underline hover:decoration-from-font">SELENGKAPNYA!</a>
                 </div>
             </div>
           </a>
