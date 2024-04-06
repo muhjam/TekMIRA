@@ -170,7 +170,7 @@
               <img :src="require('@/assets/images/'+v.img)" class="w-full h-60 object-cover" />
               <div class="p-4">
                 <h4  class="text-md font-semibold">{{ v.nama }}</h4>
-                <h5  class="text-sm font-normal mb-[16px]">{{ formatRupiah(v.harga) }}</h5>
+                <h5  class="text-sm font-normal mb-[16px]">{{ formatRupiah(v.harga) }} / Hari</h5>
                 <div v-for="(fasilitas, idx) in v.fasilitas" :key="idx" class="flex gap-2 text-sm items-center mb-[8px]"><img :src="require('@/assets/icons/'+ cekFasilitasImg(idx))" class="object-contain w-[20px]" /> {{ fasilitas }}</div>
                 <div class="flex justify-end mt-[24px] items-center">
                   <span class="text-[#2587FB] text-sm font-semibold cursor-pointer hover:opacity-[0.8]">More Detail</span>
