@@ -1,7 +1,7 @@
 <template>
     <div v-if="detailTempat" class="px-[16px] md:px-[42px]">
       <div v-if="showModalImage" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
-        <div class="bg-white p-4 rounded-lg mt-[16px] h-fit w-[300px] md:w-[600px] lg:w-[800px]" @click.stop>
+        <div class="bg-white p-4 rounded-lg mt-[16px] h-fit w-full md:w-[600px] lg:w-[800px]" @click.stop>
       <button @click="showModalImage = false" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
         <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
       </button>
@@ -16,12 +16,13 @@
       </div>
       </div>
   </div>
-  <div v-if="showModalRoom !== -1" class="fixed inset-0 flex justify-center bg-black bg-opacity-50 z-40 overflow-y-scroll" @click="closeModal">
-    <div class="bg-white p-4 rounded-lg mt-[16px] h-fit w-[300px] md:w-[600px] lg:w-[800px]" @click.stop>
+  <div v-if="showModalRoom !== -1" class="fixed items-center inset-0 flex justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
+    <div class="bg-white p-4 rounded-lg h-fit" @click.stop>
       <button @click="showModalRoom = -1" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
         <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
       </button>
-      <div class="w-fit overflow-hidden relative">
+      <div class="w-[300px] md:w-[500px] lg:w-[700px] h-[300px] md:h-[500px] overflow-y-scroll">
+      <div class="w-fit relative">
         <button @click="prevImageRoom()" class="absolute top-1/2 left-0 transform-translate-y-1/2 p-2 ml-2 rounded-full opacity-[0.6] hover:opacity-[1] bg-gray-800 text-white">    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
       </svg></button>
@@ -30,7 +31,7 @@
       </svg></button>
         <img :src="require('@/assets/images/'+detailTempat.kamar[showModalRoom].img[indexImageRoom])" class="w-full object-fill" />
       </div>
-      <div class="py-[16px]">
+      <div class="">
         <h3 class="text-2xl font-bold mb-[8px]">{{ detailTempat.kamar[showModalRoom].nama }}</h3>
         <h4 class="text-sm font-normal mb-[16px]">{{ formatRupiah(detailTempat.kamar[showModalRoom].harga) }} / Hari</h4>
                 <div v-for="(fasilitas, idx) in detailTempat.kamar[showModalRoom].fasilitas" :key="idx" class="flex gap-2 text-sm items-center mb-[8px]"><img :src="require('@/assets/icons/'+ cekFasilitasImg(idx))" class="object-contain w-[20px]" /> {{ fasilitas }}</div>
@@ -72,18 +73,19 @@
                   </ul>
                 </div>
                 </div>
-                <div class="flex justify-end mt-[24px] items-center">
-                  <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20reservasi%20kamar%20${detailTempat.kamar[showModalRoom].nama}%20-%20${detailTempat.nama}.`" class="ml-auto text-sm font-semibold text-white bg-[#245785] px-[16px] py-[8px] rounded-md cursor-pointer hover:opacity-[0.8]">Reservasi</a>
                 </div>
       </div>
+      <div class="flex justify-end mt-[24px] items-center">
+                  <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20reservasi%20kamar%20${detailTempat.kamar[showModalRoom].nama}%20-%20${detailTempat.nama}.`" class="ml-auto text-sm font-semibold text-white bg-[#245785] px-[16px] py-[8px] rounded-md cursor-pointer hover:opacity-[0.8]">Reservasi</a>
+          </div>
     </div>
   </div>
-  <div v-if="showModalPlace" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
+  <div v-if="showModalPlace" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40 overflow-y-scroll" @click="closeModal">
     <div class="bg-white p-4 rounded-lg" @click.stop>
       <button @click="showModalPlace = false" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
         <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
       </button>
-      <div class="w-[300px] md:w-[500px] lg:w-[700px] h-[300px] md:h-[500px] overflow-hidden">
+      <div class="w-[300px] md:w-[500px] lg:w-[700px] h-[300px] md:h-[500px] overflow-y-scroll">
         <h3 class="text-2xl font-bold mb-[8px]">Tempat Populer</h3>
         <div class="flex flex-wrap gap-8">
         <div v-if="detailTempat.detailFasilitas.bandara">

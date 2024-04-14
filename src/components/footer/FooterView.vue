@@ -1,5 +1,5 @@
 <template>
-	<footer class="z-40 bg-[#013068] shadow-lg px-[16px] md:px-[42px] py-[34px]">
+	<footer class="z-10 bg-[#013068] shadow-lg px-[16px] md:px-[42px] py-[34px]">
 		<div class="flex justify-between gap-8 flex-wrap">
 			<div class="flex flex-col w-full md:w-1/2 lg:w-1/4 gap-8">
 				<h4 class="text-white font-semibold text-xl">Informasi</h4>
