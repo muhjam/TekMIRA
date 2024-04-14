@@ -305,8 +305,8 @@
               <h2 class="text-3xl font-semibold">Lihat Ruangan Lainnya</h2>
               <img :src="require('@/assets/icons/right-arrow.png')" class="object-cover" />
             </div>
-              <div class="flex items-center gap-8">
-            <a v-for="(v, i) in tempatLain" :key="i" :href="`${v.slug}`" class="w-full md:w-1/3 rounded-2xl overflow-hidden bg-white shadow-md  cursor-pointer cursor-pointer-card" style="height: auto;">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a v-for="(v, i) in tempatLain" :key="i" :href="`${v.slug}`" class="rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer-card" style="height: auto;">
             <img :src="require('@/assets/images/'+v.img[0])" class="w-full h-60 object-cover" />
             <div class="p-4">
                 <h4 class="text-md font-semibold">{{ v.nama }}</h4>
