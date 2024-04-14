@@ -59,12 +59,6 @@
 
 <script>
 export default {
-  metaInfo() {
-  return {
-    title: "Home",
-    titleTemplate: "tekMIRA - %s",
-  };
-},
   data() {
       return {
           kategori: [

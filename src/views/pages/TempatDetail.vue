@@ -344,7 +344,7 @@ export default {
   },
     metaInfo() {
     return {
-      title: "Meeting",
+      title: this.detailTempat.nama,
       titleTemplate: "tekMIRA - %s",
     };
   },

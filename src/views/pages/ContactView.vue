@@ -24,6 +24,12 @@
 <script>
 export default {
   name: "ContactView",
+  metaInfo() {
+    return {
+      title: "Contact",
+      titleTemplate: "tekMIRA - %s",
+    };
+  },
 };
 </script>
 

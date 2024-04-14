@@ -94,7 +94,7 @@ export default {
   },
     metaInfo() {
     return {
-      title: "Meeting",
+      title: this.judul,
       titleTemplate: "tekMIRA - %s",
     };
   },

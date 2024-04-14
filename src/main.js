@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './css/style.css';
+import "@/plugins/vue-meta";
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core';
