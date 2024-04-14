@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <HeaderView
-    />
-      <div
-      >
-        <router-view />
-      </div>
-      <FooterView
-    />
+  <div class="flex flex-col min-h-screen">
+    <HeaderView />
+    <div class="flex-grow">
+      <router-view />
     </div>
+    <FooterView />
+  </div>
 </template>
 
 <script>

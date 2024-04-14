@@ -1,25 +1,131 @@
 <template>
     <div v-if="detailTempat" class="px-[16px] md:px-[42px]">
-      <div v-if="showModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
-    <div class="bg-white p-4 rounded-lg" @click.stop>
-      <button @click="showModal = false" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      <div v-if="showModalImage" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
+        <div class="bg-white p-4 rounded-lg mt-[16px] h-fit w-[300px] md:w-[600px] lg:w-[800px]" @click.stop>
+      <button @click="showModalImage = false" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+        <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
       </button>
-      <div class="w-[300px] md:w-[500px] lg:w-[700px] h-[300px] md:h-[500px] overflow-hidden">
-      <img :src="require('@/assets/images/'+detailTempat.img[indexImage])" class="w-full object-fill" />
-    </div>
-      <div class="flex justify-between mt-4">
-        <button @click="indexImage = indexImage - 1" :disabled="indexImage == 0" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-md">Prev</button>
-        <button @click="indexImage = indexImage + 1" :disabled="indexImage == detailTempat.img.length - 1" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-md">Next</button>
+      <div class="w-fit overflow-hidden relative">
+        <button @click="prevImage()" class="absolute top-1/2 left-0 transform-translate-y-1/2 p-2 ml-2 rounded-full opacity-[0.6] hover:opacity-[1] bg-gray-800 text-white">    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg></button>
+        <button @click="nextImage()" class="absolute top-1/2 right-0 transform-translate-y-1/2 p-2 mr-2 rounded-full opacity-[0.6] hover:opacity-[1] bg-gray-800 text-white">    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg></button>
+        <img :src="require('@/assets/images/'+detailTempat.img[indexImage])" class="w-full object-fill" />
+      </div>
+      </div>
+  </div>
+  <div v-if="showModalRoom !== -1" class="fixed inset-0 flex justify-center bg-black bg-opacity-50 z-40 overflow-y-scroll" @click="closeModal">
+    <div class="bg-white p-4 rounded-lg mt-[16px] h-fit w-[300px] md:w-[600px] lg:w-[800px]" @click.stop>
+      <button @click="showModalRoom = -1" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+        <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
+      </button>
+      <div class="w-fit overflow-hidden relative">
+        <button @click="prevImageRoom()" class="absolute top-1/2 left-0 transform-translate-y-1/2 p-2 ml-2 rounded-full opacity-[0.6] hover:opacity-[1] bg-gray-800 text-white">    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg></button>
+        <button @click="nextImageRoom()" class="absolute top-1/2 right-0 transform-translate-y-1/2 p-2 mr-2 rounded-full opacity-[0.6] hover:opacity-[1] bg-gray-800 text-white">    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg></button>
+        <img :src="require('@/assets/images/'+detailTempat.kamar[showModalRoom].img[indexImageRoom])" class="w-full object-fill" />
+      </div>
+      <div class="py-[16px]">
+        <h3 class="text-2xl font-bold mb-[8px]">{{ detailTempat.kamar[showModalRoom].nama }}</h3>
+        <h4 class="text-sm font-normal mb-[16px]">{{ formatRupiah(detailTempat.kamar[showModalRoom].harga) }} / Hari</h4>
+                <div v-for="(fasilitas, idx) in detailTempat.kamar[showModalRoom].fasilitas" :key="idx" class="flex gap-2 text-sm items-center mb-[8px]"><img :src="require('@/assets/icons/'+ cekFasilitasImg(idx))" class="object-contain w-[20px]" /> {{ fasilitas }}</div>
+                <div class="flex flex-wrap gap-8 pt-[16px]">
+                <div class="">
+                  <h5 class="text-md font-medium">Aksesibilitas</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].aksesibilitas" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h5 class="text-md font-medium">Kamar Mandi</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].kamarMandi" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h5 class="text-md font-medium">Kamar Tidur</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].kamarTidur" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h5 class="text-md font-medium">Makan dan Minum</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].makananMinuman" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h5 class="text-md font-medium">Hiburan</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].hiburan" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h5 class="text-md font-medium">Lainnya</h5>
+                  <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+                    <li v-for="(v, i) in detailTempat.kamar[showModalRoom].lainnya" :key="i">{{ v }}</li>
+                  </ul>
+                </div>
+                </div>
+                <div class="flex justify-end mt-[24px] items-center">
+                  <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20reservasi%20kamar%20${detailTempat.kamar[showModalRoom].nama}%20-%20${detailTempat.nama}.`" class="ml-auto text-sm font-semibold text-white bg-[#245785] px-[16px] py-[8px] rounded-md cursor-pointer hover:opacity-[0.8]">Reservasi</a>
+                </div>
       </div>
     </div>
   </div>
-      <div class="pb-[24px] mt-[24px]">
+  <div v-if="showModalPlace" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40" @click="closeModal">
+    <div class="bg-white p-4 rounded-lg" @click.stop>
+      <button @click="showModalPlace = false" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+        <svg class="w-6 h-6" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" fill="white"></path></svg>
+      </button>
+      <div class="w-[300px] md:w-[500px] lg:w-[700px] h-[300px] md:h-[500px] overflow-hidden">
+        <h3 class="text-2xl font-bold mb-[8px]">Tempat Populer</h3>
+        <div class="flex flex-wrap gap-8">
+        <div v-if="detailTempat.detailFasilitas.bandara">
+        <h4 class="text-md font-bold">Bandara</h4>
+        <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+          <li v-for="(v, i) in detailTempat.detailFasilitas.bandara" :key="i"><span class="font-medium">{{ v[0] }}</span> <br/> <span class="text-gray-500">{{ v[1] }}</span></li>
+        </ul>
+      </div>
+        <div v-if="detailTempat.detailFasilitas.belanja">
+        <h4 class="text-md font-bold">Belanja</h4>
+        <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+          <li v-for="(v, i) in detailTempat.detailFasilitas.belanja" :key="i"><span class="font-medium">{{ v[0] }}</span> <br/> <span class="text-gray-500">{{ v[1] }}</span></li>
+        </ul>
+      </div>
+      <div v-if="detailTempat.detailFasilitas.rumahSakit">
+        <h4 class="text-md font-bold">Rumah Sakit</h4>
+        <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+          <li v-for="(v, i) in detailTempat.detailFasilitas.rumahSakit" :key="i"><span class="font-medium">{{ v[0] }}</span> <br/> <span class="text-gray-500">{{ v[1] }}</span></li>
+        </ul>
+      </div>
+      <div v-if="detailTempat.detailFasilitas.areaLuar">
+        <h4 class="text-md font-bold">Area Luar</h4>
+        <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+          <li v-for="(v, i) in detailTempat.detailFasilitas.areaLuar" :key="i"><span class="font-medium">{{ v[0] }}</span> <br/> <span class="text-gray-500">{{ v[1] }}</span></li>
+        </ul>
+      </div>
+      <div v-if="detailTempat.detailFasilitas.transportasiUmum">
+        <h4 class="text-md font-bold">Transportasi Umum</h4>
+        <ul class="mb-[16px] text-sm list-disc pl-[20px]">
+          <li v-for="(v, i) in detailTempat.detailFasilitas.transportasiUmum" :key="i"><span class="font-medium">{{ v[0] }}</span> <br/> <span class="text-gray-500">{{ v[1] }}</span></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="pb-[24px] mt-[24px]">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-full h-[200px] md:h-[500px] rounded-[10px] md:rounded-r-[0] md:rounded-l-[50px] overflow-hidden relative">
               <img :src="require('@/assets/images/'+detailTempat.img[0])" class="object-cover w-full h-full" />
               <div class="flex justify-center absolute bottom-[5px] right-[5px] md:hidden">
-                  <button @click="showModal = true" class="bg-black text-white px-4 py-2 rounded-md shadow-md opacity-[0.6] hover:opacity-[1] text-sm">Lihat Semua Foto</button>
+                  <button @click="showModalImage = true" class="bg-black text-white px-4 py-2 rounded-md shadow-md opacity-[0.6] hover:opacity-[1] text-sm">Lihat Semua Foto</button>
               </div>
             </div>
             <div class="w-1/2 hidden md:flex flex-col justify-end gap-2 md:gap-4">
@@ -34,7 +140,7 @@
                     <img :src="require('@/assets/images/'+detailTempat.img[0])" class="object-cover w-full h-[240px] rounded-br-[50px]" />
                   </div>
                   <div class="flex justify-center absolute bottom-[5px] right-[30px]">
-                  <button @click="showModal = true" class="bg-black text-white px-4 py-2 rounded-md shadow-md opacity-[0.6] hover:opacity-[1] text-sm">Lihat Semua Foto</button>
+                  <button @click="showModalImage = true" class="bg-black text-white px-4 py-2 rounded-md shadow-md opacity-[0.6] hover:opacity-[1] text-sm">Lihat Semua Foto</button>
                 </div>
                 </div>
               </div>
@@ -63,17 +169,22 @@
                     <p>{{ detailTempat.spesifikasi.hubungi }}</p>
                   </div>
                   <div class="w-1/2 md:w-1/3">
-                    <h3 class="text-md  font-semibold mb-[6px]">Total Kapasitas</h3>
+                    <h3 class="text-md  font-semibold mb-[6px]">Kapasitas</h3>
                     <p>{{ detailTempat.spesifikasi.kapasitas }} Orang</p>
                   </div>
                </div>
                <div class="w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl">
-                    <h3 class="text-md md:text-lg  font-semibold mb-[6px]">Fasilitas Utama</h3>
+                    <h3 class="text-md md:text-lg  font-semibold mb-[6px]">{{ detailTempat.kategori !== 'Wisma' ? 'Fasilitas Utama' : 'Tempat Populer' }}</h3>
                   <div class="flex flex-wrap">
-                  <div v-for="(v, i) in detailTempat.fasilitas" :key="i" class="w-1/2 flex mb-[8px] gap-4">
-                    <img :src="require('@/assets/icons/'+ v + '.png')" class="object-contain" />
-                    <p>{{ v }}</p>
+                    <div v-for="(v, i) in detailTempat.fasilitas" :key="i" :class="`${detailTempat.kategori !== 'Wisma' ? 'w-1/2' : 'w-full'} flex mb-[8px] gap-4`">
+                    <img  v-if="detailTempat.kategori !== 'Wisma'" :src="require('@/assets/icons/'+ v + '.png')" class="object-contain" />
+                    <p  v-if="detailTempat.kategori !== 'Wisma'" >{{ v }}</p>
+                    <div v-else class="flex justify-between">
+                    <p>{{ v[0] }}</p>
+                    <p>{{ v[1] }}</p>
+                    </div>
                   </div>
+                  <span v-if="detailTempat.kategori === 'Wisma'" @click="showModalPlace = true" class="text-[#2587FB] text-sm font-medium cursor-pointer hover:opacity-[0.8] ml-auto mt-[8px]">See More</span>
                 </div>
                </div>
             </div>
@@ -90,17 +201,22 @@
                     <p>{{ detailTempat.spesifikasi.hubungi }}</p>
                   </div>
                   <div class="w-1/2 md:w-1/3">
-                    <h3 class="text-md font-semibold mb-[6px]">Total Kapasitas</h3>
+                    <h3 class="text-md font-semibold mb-[6px]">Kapasitas</h3>
                     <p>{{ detailTempat.spesifikasi.kapasitas }} Orang</p>
                   </div>
                </div>
                <div :class="`${detailTempat.kategori !== 'Tenis' ? '' : 'hidden'} w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl`">
-                    <h3 class="text-md md:text-lg  font-semibold mb-[6px]">Fasilitas Utama</h3>
-                  <div class="flex flex-wrap">
-                  <div v-for="(v, i) in detailTempat.fasilitas" :key="i" class="w-1/2 flex mb-[8px] gap-4">
-                    <img :src="require('@/assets/icons/'+ v + '.png')" class="object-contain" />
-                    <p>{{ v }}</p>
+                    <h3 class="text-md md:text-lg  font-semibold mb-[6px]">{{ detailTempat.kategori !== 'Wisma' ? 'Fasilitas Utama' : 'Tempat Populer' }}</h3>
+                    <div class="flex flex-wrap">
+                    <div v-for="(v, i) in detailTempat.fasilitas" :key="i" :class="`${detailTempat.kategori !== 'Wisma' ? 'w-1/2' : 'w-full'} flex mb-[8px] gap-4`">
+                    <img  v-if="detailTempat.kategori !== 'Wisma'" :src="require('@/assets/icons/'+ v + '.png')" class="object-contain" />
+                    <p  v-if="detailTempat.kategori !== 'Wisma'" >{{ v }}</p>
+                    <div v-else class="flex justify-between w-full">
+                    <p>{{ v[0] }}</p>
+                    <p>{{ v[1] }}</p>
+                    </div>
                   </div>
+                  <span v-if="detailTempat.kategori === 'Wisma'" @click="showModalPlace = true" class="text-[#2587FB] text-sm font-medium cursor-pointer hover:opacity-[0.8] ml-auto mt-[8px]">See More</span>
                 </div>
                </div>
                <div :class="`${detailTempat.kategori === 'Tenis' ? '' : 'hidden'} w-full px-[14px] md:px-[24px] py-[24px] bg-white shadow-sm rounded-xl border-solid border-b-[2px] border-gray-300`">
@@ -167,13 +283,13 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div v-for="(v, i) in detailTempat.kamar" :key="i" class="rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer-card">
-              <img :src="require('@/assets/images/'+v.img)" class="w-full h-60 object-cover" />
+              <img :src="require('@/assets/images/'+v.img[0])" class="w-full h-60 object-cover" />
               <div class="p-4">
                 <h4  class="text-md font-semibold">{{ v.nama }}</h4>
                 <h5  class="text-sm font-normal mb-[16px]">{{ formatRupiah(v.harga) }} / Hari</h5>
                 <div v-for="(fasilitas, idx) in v.fasilitas" :key="idx" class="flex gap-2 text-sm items-center mb-[8px]"><img :src="require('@/assets/icons/'+ cekFasilitasImg(idx))" class="object-contain w-[20px]" /> {{ fasilitas }}</div>
                 <div class="flex justify-end mt-[24px] items-center">
-                  <span class="text-[#2587FB] text-sm font-semibold cursor-pointer hover:opacity-[0.8]">More Detail</span>
+                  <span @click="showModalRoom = i" class="text-[#2587FB] text-sm font-semibold cursor-pointer hover:opacity-[0.8]">More Detail</span>
                   <a :href="`http://wa.me/6285795111965?text=Hallo%20admin%20TekMIRA,%20saya%20mau%20reservasi%20kamar%20${v.nama}%20-%20${detailTempat.nama}.`" class="ml-auto text-sm font-semibold text-white bg-[#245785] px-[16px] py-[8px] rounded-md cursor-pointer hover:opacity-[0.8]">Reservasi</a>
                 </div>
               </div>
@@ -232,8 +348,11 @@ export default {
   },
   data() {
     return {
-      showModal: false,
+      showModalImage: false,
+      showModalRoom: -1,
+      showModalPlace: false,
       indexImage: 0,
+      indexImageRoom: 0,
     };
   },
     computed: {
@@ -287,7 +406,38 @@ export default {
     closeModal(event) {
       // Tutup modal hanya jika klik di luar container modal
       if (event.target.classList.contains('fixed')) {
-        this.showModal = false;
+        this.showModalImage = false;
+        this.showModalRoom = -1;
+        this.indexImageRoom = 0;
+        this.showModalPlace = false;
+      }
+    },
+    nextImage(){
+      if(this.indexImage !== this.detailTempat.img.length - 1){
+        this.indexImage += 1;
+      }else{
+        this.indexImage = 0;
+      }
+    },
+    prevImage(){
+      if(this.indexImage !== 0){
+        this.indexImage -= 1;
+      }else{
+        this.indexImage = this.detailTempat.img.length - 1;
+      }
+    },
+    nextImageRoom(){
+      if(this.indexImageRoom !== this.detailTempat.kamar[this.showModalRoom].img.length - 1){
+        this.indexImageRoom += 1;
+      }else{
+        this.indexImageRoom = 0;
+      }
+    },
+    prevImageRoom(){
+      if(this.indexImageRoom !== 0){
+        this.indexImageRoom -= 1;
+      }else{
+        this.indexImageRoom = this.detailTempat.kamar[this.showModalRoom].img.length - 1;
       }
     },
     scrollDown() {

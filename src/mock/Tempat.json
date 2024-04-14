@@ -92,22 +92,41 @@
       "kategori": "Wisma",
       "kamar":[
         {
-        "img": "kamar.png",
-        "nama": "Standar Room",
-        "harga": 250000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
-      },
-      {
-        "img": "kamar.png",
-        "nama": "Delux Room",
-         "harga": 500000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
-      }
-    ],
+          "img": ["kamar.png", "kategori2.png"],
+          "nama": "Standar Room",
+          "harga": 250000,
+          "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+          "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+          "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+          "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+          "makananMinuman": ["Free bottled water", "Room service (limited)"],
+          "hiburan": ["30-inch LCD TV"],
+          "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
+        },
+        {
+          "img": ["kamar.png", "kategori2.png"],
+          "nama": "Delux Room",
+          "harga": 500000,
+          "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+          "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+          "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+          "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+          "makananMinuman": ["Free bottled water", "Room service (limited)"],
+          "hiburan": ["30-inch LCD TV"],
+          "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
+        }
+      ],
       "nama": "Wisma Sudirman 1",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "img": ["kategori3.png","kategori2.png","kategori1.png","kategori4.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "fasilitas": [["Alun-Alun Kota Bandung","1 km"],["Paskal Hyper Square","20 km"],["Bandung Train Station","100 km"]],
+      "detailFasilitas": {
+        "bandara": [["Soekarno-Hatta Internasional","50 km"], ["Kertajati Internasional","60 km"]],
+        "rumahSakit": [["Hasan Sadikin Bandung","20 km"],["Maya Panda Hospital","100 km"]],
+        "transportasiUmum": [["Stasiun Bandung","5 km"], ["Stasiun Leuwipanjang","5 km"], ["Stasiun Kereta Cepat Whoosh (Padalarang)","5 km"], ["Stasiun Kereta Cepat Whoosh (Tegalluar)","5 km"]],
+        "belanja": [["Cihamplas Walk","5 km"], ["Paris Van Java","5 km"], ["Paskal Hyper Square","5 km"], ["Bandung Indah Plaza","5 km"]],
+        "areaLuar": [["Alun-alun Kota Bandung","5 km"], ["Taman Lalulintas","5 km"], ["Jalan Braga","5 km"], ["Jalan Sudirman","5 km"]]
+      },
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
@@ -120,34 +139,65 @@
       "kategori": "Wisma",
       "kamar":[
         {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Standar Room",
         "harga": 250000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Delux Room",
          "harga": 500000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Superior Room",
         "harga": 750000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Suite Room",
         "harga": 950000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       }
     ],
       "nama": "Wisma Sudirman 2",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "img": ["kategori3.png","kategori2.png","kategori1.png","kategori4.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "fasilitas": ["Alun-Alun Kota Bandung","1 km","Paskal Hyper Square","20 km","Bandung Train Station","100 km"],
+      "detailFasilitas": {
+        "bandara": [["Soekarno-Hatta Internasional","50 km"], ["Kertajati Internasional","60 km"]],
+        "rumahSakit": [["Hasan Sadikin Bandung","20 km"],["Maya Panda Hospital","100 km"]],
+        "transportasiUmum": [["Stasiun Bandung","5 km"], ["Stasiun Leuwipanjang","5 km"], ["Stasiun Kereta Cepat Whoosh (Padalarang)","5 km"], ["Stasiun Kereta Cepat Whoosh (Tegalluar)","5 km"]],
+        "belanja": [["Cihamplas Walk","5 km"], ["Paris Van Java","5 km"], ["Paskal Hyper Square","5 km"], ["Bandung Indah Plaza","5 km"]],
+        "areaLuar": [["Alun-alun Kota Bandung","5 km"], ["Taman Lalulintas","5 km"], ["Jalan Braga","5 km"], ["Jalan Sudirman","5 km"]]
+      },
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
@@ -160,22 +210,41 @@
       "kategori": "Wisma",
       "kamar":[
         {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Standar Room",
         "harga": 250000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Superior Room",
         "harga": 750000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       }
     ],
       "nama": "Wisma Sudirman 3",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "img": ["kategori3.png","kategori2.png","kategori1.png","kategori4.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "fasilitas": ["Alun-Alun Kota Bandung","1 km","Paskal Hyper Square","20 km","Bandung Train Station","100 km"],
+      "detailFasilitas": {
+        "bandara": [["Soekarno-Hatta Internasional","50 km"], ["Kertajati Internasional","60 km"]],
+        "rumahSakit": [["Hasan Sadikin Bandung","20 km"],["Maya Panda Hospital","100 km"]],
+        "transportasiUmum": [["Stasiun Bandung","5 km"], ["Stasiun Leuwipanjang","5 km"], ["Stasiun Kereta Cepat Whoosh (Padalarang)","5 km"], ["Stasiun Kereta Cepat Whoosh (Tegalluar)","5 km"]],
+        "belanja": [["Cihamplas Walk","5 km"], ["Paris Van Java","5 km"], ["Paskal Hyper Square","5 km"], ["Bandung Indah Plaza","5 km"]],
+        "areaLuar": [["Alun-alun Kota Bandung","5 km"], ["Taman Lalulintas","5 km"], ["Jalan Braga","5 km"], ["Jalan Sudirman","5 km"]]
+      },
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
@@ -188,28 +257,53 @@
       "kategori": "Wisma",
       "kamar":[
         {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Standar Room",
         "harga": 250000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Delux Room",
          "harga": 500000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       },
       {
-        "img": "kamar.png",
+        "img": ["kamar.png", "kategori2.png"],
         "nama": "Superior Room",
         "harga": 750000,
-        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"]
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
       }
     ],
       "nama": "Wisma Supratman",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "img": ["kategori3.png","kategori2.png","kategori1.png","kategori4.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "fasilitas": ["Alun-Alun Kota Bandung","1 km","Paskal Hyper Square","20 km","Bandung Train Station","100 km"],
+      "detailFasilitas": {
+        "bandara": [["Soekarno-Hatta Internasional","50 km"], ["Kertajati Internasional","60 km"]],
+        "rumahSakit": [["Hasan Sadikin Bandung","20 km"],["Maya Panda Hospital","100 km"]],
+        "transportasiUmum": [["Stasiun Bandung","5 km"], ["Stasiun Leuwipanjang","5 km"], ["Stasiun Kereta Cepat Whoosh (Padalarang)","5 km"], ["Stasiun Kereta Cepat Whoosh (Tegalluar)","5 km"]],
+        "belanja": [["Cihamplas Walk","5 km"], ["Paris Van Java","5 km"], ["Paskal Hyper Square","5 km"], ["Bandung Indah Plaza","5 km"]],
+        "areaLuar": [["Alun-alun Kota Bandung","5 km"], ["Taman Lalulintas","5 km"], ["Jalan Braga","5 km"], ["Jalan Sudirman","5 km"]]
+      },
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",

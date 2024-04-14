@@ -39,6 +39,10 @@
               <path v-if="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
 		</button>
+		<!-- Sign In button -->
+		<a href="#" class="hidden md:block bg-[#245785] hover:opacity-[0.8] text-white font-medium py-[8px] px-[16px] rounded text-[14px]">
+			Sign In
+		</a>
 	</div>
 	<div class="md:hidden" v-if="mobileMenuOpen">
 		<a href="/meeting" :class="{
