@@ -323,7 +323,38 @@
         "ukuran": "6 x 4m",
         "hubungi": "(022) 6030483",
         "kapasitas": 20
-      }
+      },
+      "keterangan": [
+        {
+          "judul": "Spesifikasi:",
+          "detail": ["Luas ruangan: 49.5m x 8.5m", "Panggung Modular: 3m x 3m", "Ruang ganti / rias: 1 ruangan", "Lobby: 42 m x 8.5 m", "AC Standing 5 PK: 4 unit", "Kapasitas listrik: 20.000 watt dan backup genset", "Kursi: 50 buah"]
+        },
+        {
+          "judul": "Spesifikasi:",
+          "detail": ["Luas ruangan: 49.5m x 8.5m", "Panggung Modular: 3m x 3m", "Ruang ganti / rias: 1 ruangan", "Lobby: 42 m x 8.5 m", "AC Standing 5 PK: 4 unit", "Kapasitas listrik: 20.000 watt dan backup genset", "Kursi: 50 buah"]
+        }
+      ],
+      "keteranganLebihRinci": [
+        {
+          "judul": "Ketentuan waktu resepsi dan bongkaran",
+          "detail": [
+            {"judul": "Resepsi pagi:", "detail": ["Acara resepsi maksimal s.d jam 14:00 WIB", "Bongkaran maksimal s.d jam 16:00 WIB"]},
+            {"judul": "Resepsi malam:", "detail": ["Acara resepsi maksimal s.d jam 21:00 WIB", "Bongkaran maksimal s.d jam 23:00 WIB"]}
+        ]
+        },
+        {
+          "judul": "Kelebihan waktu resepsi dan bongkaran akan dikenakan biaya Rp750.000/jam",
+          "detail": []
+        },
+        {
+          "judul": "Kelebihan waktu resepsi dan bongkaran akan dikenakan biaya Rp750.000/jam",
+          "detail": []
+        },
+        {
+          "judul": "Tambahan kursi dikenakan tarif Rp10.000/kursi",
+          "detail": []
+        }
+      ]
     },
     {
       "slug": "batubara-hall",
@@ -337,7 +368,38 @@
         "ukuran": "6 x 4m",
         "hubungi": "(022) 6030483",
         "kapasitas": 20
-      }
+      },
+      "keterangan": [
+        {
+          "judul": "Spesifikasi:",
+          "detail": ["Luas ruangan: 49.5m x 8.5m", "Panggung Modular: 3m x 3m", "Ruang ganti / rias: 1 ruangan", "Lobby: 42 m x 8.5 m", "AC Standing 5 PK: 4 unit", "Kapasitas listrik: 20.000 watt dan backup genset", "Kursi: 50 buah"]
+        },
+        {
+          "judul": "Spesifikasi:",
+          "detail": ["Luas ruangan: 49.5m x 8.5m", "Panggung Modular: 3m x 3m", "Ruang ganti / rias: 1 ruangan", "Lobby: 42 m x 8.5 m", "AC Standing 5 PK: 4 unit", "Kapasitas listrik: 20.000 watt dan backup genset", "Kursi: 50 buah"]
+        }
+      ],
+      "keteranganLebihRinci": [
+        {
+          "judul": "Ketentuan waktu resepsi dan bongkaran",
+          "detail": [
+            {"judul": "Resepsi pagi:", "detail": ["Acara resepsi maksimal s.d jam 14:00 WIB", "Bongkaran maksimal s.d jam 16:00 WIB"]},
+            {"judul": "Resepsi malam:", "detail": ["Acara resepsi maksimal s.d jam 21:00 WIB", "Bongkaran maksimal s.d jam 23:00 WIB"]}
+        ]
+        },
+        {
+          "judul": "Kelebihan waktu resepsi dan bongkaran akan dikenakan biaya Rp750.000/jam",
+          "detail": []
+        },
+        {
+          "judul": "Kelebihan waktu resepsi dan bongkaran akan dikenakan biaya Rp750.000/jam",
+          "detail": []
+        },
+        {
+          "judul": "Tambahan kursi dikenakan tarif Rp10.000/kursi",
+          "detail": []
+        }
+      ]
     }
   ]
   
