@@ -352,7 +352,7 @@
                   <div class="flex w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
                     <div class="w-1/4">
                       <h1 class="text-[24px] font-semibold">
-                        Pembatalan
+                        Penundaan
                       </h1>
                     </div>
                     <ul class="w-full">
