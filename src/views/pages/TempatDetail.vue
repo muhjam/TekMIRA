@@ -300,13 +300,13 @@
           </div>
         </div>
         <div :class="`${detailTempat.kategori === 'Wedding' ? 'block' : 'hidden'} items-start w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl mb-[16px]`">
-                  <div class="flex w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
-                    <div class="w-1/4">
+                  <div class="flex flex-wrap md:flex-nowrap w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
+                    <div class="w-[100%] md:w-[30%]">
                       <h1 class="text-[24px] font-semibold">
                         Keterangan
                       </h1>
                     </div>
-                    <div>
+                    <div class="w-[100%] md:w-[70%]">
                       <div v-for="(v, i) in detailTempat.keterangan" :key="i" class="mb-[8px]">
                       {{ i + 1 }}) {{ v.judul }}
                           <div v-for="(detail, index) in v.detail" :key="index" class="ps-[16px]">
@@ -315,14 +315,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="flex w-full pb-[8px] pt-[16px]">
-                    <div class="w-1/4">
+                  <div class="flex flex-wrap md:flex-nowrap w-full pb-[8px] pt-[16px]">
+                    <div class="w-[100%] md:w-[30%]">
                       <h1 class="text-[24px] font-semibold">
                         Keterangan Lebih Rinci
                       </h1>
                     </div>
                     <div>
-                      <div v-for="(v, i) in detailTempat.keteranganLebihRinci" :key="i" class="mb-[8px]">
+                      <div v-for="(v, i) in detailTempat.keteranganLebihRinci" :key="i" class="w-[100%] md:w-[70%] mb-[8px]">
                       {{ i + 1 }}) {{ v.judul }}
                           <div v-for="(detail, index) in v.detail" :key="index" class="ps-[16px]">
                               {{ String.fromCharCode(97 + index) }}. {{ detail.judul}}
@@ -336,39 +336,39 @@
                </div>
                <div :class="`${detailTempat.kategori === 'Wedding' ? 'block' : 'hidden'} items-start w-full px-[24px] py-[24px] bg-white shadow-sm rounded-xl`">
                 <h1 class="text-[24px] font-bold uppercase">TATA CARA PENGENAAN TARIF PENGGUNAAN GEDUNG {{ detailTempat.nama }}</h1>
-                  <div class="flex w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
-                    <div class="w-1/4">
+                  <div class="flex flex-wrap md:flex-nowrap w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
+                    <div class="w-[100%] md:w-[30%]">
                       <h1 class="text-[24px] font-semibold">
                         Pembayaran
                       </h1>
                     </div>
-                    <ul class="w-full">
+                    <ul class="w-[100%] md:w-[70%]">
                       <li class="mb-[8px]">1) Pengguna jasa wajib membayar uang muka minimal sebesar 35% dari tarif pada saat pemesanan sewa gedung.</li>
                       <li class="mb-[8px]">2) Pelunasan harus dilakukan paling lambat 2 bulan sebelum tanggal penggunaan gedung.</li>
                       <li class="mb-[8px]">3) Khusus untuk pemesanan sewa gedung kurang dari 2 bulan sebelum tanggal penggunaan, maka pembayaran dilakukan sebesar 100% dari tarif.</li>
                       <li class="mb-[8px]">4) Bagi karyawan atau keluarga iinti dari karyawan Badan Layanan Umum Balai Besar Pengujian Mineral dan Batubara tekMIRA dikenakan diskon sebesar 25% dari tarif, dengan syarat harus menyertakan kartu keluarga. keluarga inti adalah anak yang tercantum dalam kartu keluarga karyawan Badan Layanan Umum Balai Besar Pengujian Mineral dan Batubara tekMIRA.</li>
                     </ul>
                   </div>
-                  <div class="flex w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
-                    <div class="w-1/4">
+                  <div class="flex flex-wrap md:flex-nowrap w-full border-solid border-b-[2px] border-gray-300 py-[8px]">
+                    <div class="w-[100%] md:w-[30%]">
                       <h1 class="text-[24px] font-semibold">
                         Penundaan
                       </h1>
                     </div>
-                    <ul class="w-full">
+                    <ul class="w-[100%] md:w-[70%]">
                       <li class="mb-[8px]">1) Jika terjadi pembatalan atau tikdak dilakukan pelunasan kurang dari 2 bulan sebelum tanggal penggunaan gedung, maka pemesanan dianggap batal dan uang muka sebesar 35% dari tarif tidak dapat dikembalikan kepada pengguna.</li>
                       <li class="mb-[8px]">2) Jika terjadi pembatalan lebih dari 2 bulan sebelum tanggal penggunaan gedung, maka uang yang sudah masuk dipotong sebesar 50% dari uang muka.</li>
                       <li class="mb-[8px]">3) Khusus untuk pemesanan sewa gedung kurang dari 2 bulan sebelum tanggal penggunaan, maka pembayaran dilakukan sebesar 100% dari tarif.</li>
                       <li class="mb-[8px]">4) Pemesanan atau pemakaian gedung tidak dapat dialihkan kepada pihak lain.</li>
                     </ul>
                   </div>
-                  <div class="flex w-full py-[8px]">
-                    <div class="w-1/4">
+                  <div class="flex flex-wrap md:flex-nowrap w-full py-[8px]">
+                    <div class="w-[100%] md:w-[30%]">
                       <h1 class="text-[24px] font-semibold">
                         Pembatalan
                       </h1>
                     </div>
-                    <ul class="w-full">
+                    <ul class="w-[100%] md:w-[70%]">
                       <li class="mb-[8px]">1) Penundaan/perubahan tanggal hanya dapat dilakukan paling lambat 2 bulan sebelum tanggal penggunaan gedung.</li>
                       <li class="mb-[8px]">2) Penundaan/perubahan tanggal acara yang dilakukan kurang dari 2 bulan sebelum tanggal penggunaan gedung, dianggap sebagai pembatalan.</li>
                       <li class="mb-[8px]">3) Untuk perubahan tanggal sebagaimana dimaksud pada angka 1) hanya dapat dilakukan 1 kali dan perubahan tanggal tersebut maksimal sampai 3 bulan berikutnya.</li>
