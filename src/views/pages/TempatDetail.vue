@@ -134,12 +134,12 @@
               <div class="flex gap-2 md:gap-4 flex-col">
                 <div class="w-full flex justify-end">
                   <div class="w-full rounded-tr-[50px] overflow-hidden">
-                    <img :src="require('@/assets/images/'+detailTempat.img[0])" class="object-cover w-full h-[240px] rounded-tr-[50px]" />
+                    <img :src="require('@/assets/images/'+detailTempat.img[1])" class="object-cover w-full h-[240px] rounded-tr-[50px]" />
                   </div>
                 </div>
                 <div class="w-full flex justify-end relative">
                   <div class="w-full rounded-br-[50px] overflow-hidden">
-                    <img :src="require('@/assets/images/'+detailTempat.img[0])" class="object-cover w-full h-[240px] rounded-br-[50px]" />
+                    <img :src="require('@/assets/images/'+detailTempat.img[2])" class="object-cover w-full h-[240px] rounded-br-[50px]" />
                   </div>
                   <div class="flex justify-center absolute bottom-[5px] right-[30px]">
                   <button @click="showModalImage = true" class="bg-black text-white px-4 py-2 rounded-md shadow-md opacity-[0.6] hover:opacity-[1] text-sm">Lihat Semua Foto</button>

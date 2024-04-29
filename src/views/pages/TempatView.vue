@@ -59,7 +59,7 @@
                   <div class="w-full px-6 py-4">
                     <img class="w-full h-[200px] mb-2 rounded-2xl object-cover block md:hidden" :src="require('@/assets/images/'+v.img[0])" alt="Category Image">
                     <h2 class="font-bold text-xl">{{ v.nama }}</h2>
-                    <p class="text-gray-700 text-sm mb-2">{{ truncateText(v.lokasi, 30) }}</p>
+                    <p class="text-gray-700 text-sm mb-2">{{ truncateText(v.lokasi, 70) }}</p>
                     <p class="text-gray-700 text-sm mb-[34px]">
                       {{ truncateText(v.deskripsi, 500) }}
                     </p>

@@ -4,12 +4,12 @@
       "kategori": "Tenis",
       "nama": "Lapangan Tenis Outdoor 1",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": ["kategori1.png","kategori2.png","kategori3.png","kategori4.png"],
+      "img": ["tns 1-1.png","tns 1-2.png","tns 1-3.png","tns 1-4.png","tns 1-5.png"],
       "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -18,12 +18,12 @@
       "kategori": "Tenis",
       "nama": "Lapangan Tenis Outdoor 2",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": ["kategori1.png","kategori2.png","kategori3.png","kategori4.png"],
+      "img": ["tns 2-1.png","tns 2-2.png","tns 2-3.png","tns 2-4.png","tns 2-5.png"],
       "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -38,7 +38,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -53,7 +53,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -63,12 +63,12 @@
       "harga": 1500000,
       "nama": "Ruang Rapat Lantai 14",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": ["kategori2.png","kategori1.png","kategori3.png","kategori4.png"],
+      "img": ["r14-1u.png","r14-2u.png","r14-3u.png","r14-4u.png","r14-5u.png","r14-6u.png"],
       "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -83,7 +83,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -130,7 +130,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -201,7 +201,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -248,7 +248,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -307,7 +307,7 @@
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
+        "hubungi": "08112330483",
         "kapasitas": 20
       }
     },
@@ -316,13 +316,13 @@
       "kategori": "Wedding",
       "nama": "Gedung S.M. SAIR",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": ["kategori4.png","kategori2.png","kategori3.png","kategori1.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "img": ["sm 1.png","sm 2.png","sm 3.png","sm 4.png","sm 5.png","sm 6.png","sm 7.png"],
+      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker"],
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
-        "kapasitas": 20
+        "hubungi": "08112330483",
+        "kapasitas": 1000
       },
       "keterangan": [
         {
@@ -361,13 +361,13 @@
       "kategori": "Wedding",
       "nama": "Batubara Hall",
       "deskripsi": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": ["kategori4.png","kategori2.png","kategori3.png","kategori1.png"],
-      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker", "Papan Tulis"],
+      "img": ["bh 1.png","bh 2.png","bh 3.png"],
+      "fasilitas": ["AC", "Projektor", "Wifi", "Speaker"],
       "lokasi": "Jalan Jend. Sudirman No.623, Wr. Muncang, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40211",
       "spesifikasi": {
         "ukuran": "6 x 4m",
-        "hubungi": "(022) 6030483",
-        "kapasitas": 20
+        "hubungi": "08112330483",
+        "kapasitas": "800 - 1000"
       },
       "keterangan": [
         {
