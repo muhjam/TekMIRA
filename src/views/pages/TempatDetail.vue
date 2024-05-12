@@ -154,7 +154,7 @@
               <div class="w-full">
               <div class="gap-4 pb-[12px]">
               <h3 class="text-3xl font-bold mb-[8px]">{{ detailTempat.nama }}</h3>
-              <h4 v-if="detailTempat.harga" class="text-2xl font-normal">{{ formatRupiah(detailTempat.harga) }} / Jam</h4>
+              <h4 v-if="detailTempat.harga" class="text-2xl font-normal">{{ formatRupiah(detailTempat.harga) }} / Hari</h4>
             </div>
               <div class="flex flex-col w-full justify-start gap-8 border-solid border-t-[2px] border-gray-300 py-[24px]">
                  <p>{{ detailTempat.deskripsi }}</p>
@@ -232,6 +232,7 @@
                       <li>Sesi 06:00 - 07:00</li>
                       <li>Sesi 07:00 - 08:00</li>
                       <li>Sesi 08:00 - 09:00</li>
+                      <li>Sesi 09:00 - 10:00</li>
                       <li>Sesi 10:00 - 11:00</li>
                       <li>Sesi 12:00 - 13:00</li>
                       <li>Sesi 13:00 - 14:00</li>
@@ -256,6 +257,7 @@
                       <li>Sesi 06:00 - 07:00</li>
                       <li>Sesi 07:00 - 08:00</li>
                       <li>Sesi 08:00 - 09:00</li>
+                      <li>Sesi 09:00 - 10:00</li>
                       <li>Sesi 10:00 - 11:00</li>
                       <li>Sesi 12:00 - 13:00</li>
                       <li>Sesi 13:00 - 14:00</li>
