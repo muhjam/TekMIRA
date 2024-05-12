@@ -1,7 +1,7 @@
 <template>
   <div class="px-[16px] md:px-[42px]">
       <div class="mb-[50px]">
-          <img :src="require('@/assets/images/homeheader.png')" class="object-cover w-full h-[180px] md:h-full" />
+          <img :src="require('@/assets/images/home.png')" class="object-cover w-full h-[180px] md:h-[500px]" />
       </div>
       <div class="pb-[84px]">
           <h2 class="text-3xl font-semibold mb-[24px]">Kategori</h2>
