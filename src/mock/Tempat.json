@@ -147,7 +147,7 @@
     {
       "img": ["w3-r2-1.png", "w3-r2-2.png", "w3-r2-3.png", "w3-r2-4.png"],
       "nama": "Room 1.2",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -159,7 +159,7 @@
     {
       "img": ["w3-r21-1.png", "w3-r21-2.png", "w3-r21-3.png", "w3-r21-4.png"],
       "nama": "Room 2.1",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -171,7 +171,7 @@
     {
       "img": ["w3-r22-1.png", "w3-r22-2.png", "w3-r22-3.png", "w3-r22-4.png"],
       "nama": "Room 2.2",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -183,7 +183,7 @@
     {
       "img": ["w3-r23-1.png", "w3-r23-2.png", "w3-r23-3.png"],
       "nama": "Room 2.3",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -195,7 +195,7 @@
     {
       "img": ["w3-r24-1.png", "w3-r24-2.png", "w3-r24-3.png", "w3-r24-4.png"],
       "nama": "Room 2.4",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -207,7 +207,7 @@
     {
       "img": ["w3-r25-1.png", "w3-r25-2.png", "w3-r25-3.png", "w3-r25-4.png"],
       "nama": "Room 2.5",
-       "harga": 500000,
+       "harga": 250000,
       "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
       "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
       "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
@@ -278,6 +278,42 @@
       {
         "img": ["w4-r21-1.png", "w4-r21-2.png", "w4-r21-3.png", "w4-r21-4.png"],
         "nama": "Room 2.1",
+        "harga": 250000,
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
+      },
+      {
+        "img": ["w4-r22-1.png", "w4-r22-2.png", "w4-r22-3.png", "w4-r22-4.png"],
+        "nama": "Room 2.2",
+        "harga": 250000,
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
+      },
+      {
+        "img": ["w4-r23-1.png", "w4-r23-2.png"],
+        "nama": "Room 2.3",
+        "harga": 250000,
+        "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
+        "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
+        "kamarMandi": ["Free toiletries", "Hydromassage showerhead", "Private bathroom", "Shampoo", "Shower", "Slippers", "Soap", "Toilet paper", "Towels"],
+        "kamarTidur": ["Bed sheets", "Blackout curtains", "No cots (infant beds) available", "Premium bedding", "No rollaway/extra beds available"],
+        "makananMinuman": ["Free bottled water", "Room service (limited)"],
+        "hiburan": ["30-inch LCD TV"],
+        "lainnya": ["Daily housekeeping", "Desk", "Electrical adaptors/chargers", "Guidebooks", "Individually decorated", "Individually furnished", "Laptop workspace", "Local maps", "Phone", "Soundproofed rooms", "Window screens"]
+      },
+      {
+        "img": ["w4-r24-1.png", "w4-r24-2.png"],
+        "nama": "Room 2.4",
         "harga": 250000,
         "fasilitas": ["54 Mbps", "2 People", "40m²", "1 King Bed"],
         "aksesibilitas": ["Doorbell/phone notification", "Visual fire alarm"],
